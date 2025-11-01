@@ -68,7 +68,7 @@ playerTwoNumBtn.addEventListener("click", () => {
     playerTwoNumError.setAttribute("hidden", true);
     playerTwoNumber.setAttribute("hidden", true);
     result.removeAttribute("hidden");
-    resultText.innerHTML = "Congratulations..! You Won The Game";
+    resultText.innerHTML = `Congratulations ${playerOneNameInput.value}.You Won The Match`
   } else {
     playerTwoNumError.removeAttribute("hidden");
     playerTwoNumError.innerHTML = "Better Luck Next Time";
