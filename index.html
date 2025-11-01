@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#F5F5F5]">
+    <!-- Player One Start-->
+
+    <!-- Player One Name Input Start -->
+    <div
+      class="max-w-[800px] bg-white pt-[200px] pb-[100px] m-auto text-center mt-[50px]"
+      id="playerOneName"
+    >
+      <h1 class="font-pop font-bold text-[28px]">Wanna Play game?</h1>
+      <form>
+        <input
+          id="playerOneNameInput"
+          class="border-[#D9D9D9] border-1 rounded-[80px] py-[20px] pl-[50px] my-[35px] font-pop font-bold text-[20px] outline-0 text-[#6d6969] w-[500px]"
+          type="text"
+          placeholder="What is your name?(player-1)"
+        />
+      </form>
+      <button
+        id="playerOneNameBtn"
+        class="bg-[#7041D3] py-[15px] px-[85px] rounded-[53px] font-pop font-bold text-8 text-white block m-auto cursor-pointer"
+      >
+        Start Game
+      </button>
+      <h2
+        id="playerOneNameError"
+        class="bg-[#CC3030] py-[9px] px-[180px] m-auto inline-block mt-[55px] font-pop font-bold text-[28px] text-white rounded-5"
+        hidden
+      >
+        Name Is Missing
+      </h2>
+    </div>
+    <!-- Player One Name Input End -->
+
+    <!-- Player One Number Input Start -->
+    <div
+      class="max-w-[800px] bg-white pt-[200px] pb-[100px] m-auto text-center mt-[50px]"
+      id="playerOneNumber"
+      hidden
+    >
+      <h1 id="playerOneNumHeading" class="font-pop font-bold text-[28px]">
+        Player - 1
+      </h1>
+      <form>
+        <input
+          id="playerOneNumInput"
+          class="border-[#D9D9D9] border-1 rounded-[80px] py-[20px] pl-[50px] my-[35px] font-pop font-bold text-[20px] outline-0 text-[#6d6969] w-[500px]"
+          type="number"
+          placeholder="Give a number"
+        />
+      </form>
+      <button
+        id="playerOneNumBtn"
+        class="bg-[#7041D3] py-[15px] px-[85px] rounded-[53px] font-pop font-bold text-8 text-white block m-auto cursor-pointer"
+      >
+        Let’s Play
+      </button>
+      <h2
+        id="playerOneNumError"
+        class="bg-[#CC3030] py-[9px] px-[180px] m-auto inline-block mt-[55px] font-pop font-bold text-[28px] text-white rounded-5"
+        hidden
+      >
+        Please give a number
+      </h2>
+    </div>
+    <!-- Player One Number Input End -->
+
+    <!-- Player One End -->
+
+    <!-- Player Two Start -->
+
+    <!-- Player Two Name Input Start -->
+    <div
+      class="max-w-[800px] bg-white pt-[200px] pb-[100px] m-auto text-center mt-[50px]"
+      id="playerTwoName"
+      hidden
+    >
+      <h1 class="font-pop font-bold text-[28px]">Wanna Play game?</h1>
+      <form>
+        <input
+          id="playerTwoNameInput"
+          class="border-[#D9D9D9] border-1 rounded-[80px] py-[20px] pl-[50px] my-[35px] font-pop font-bold text-[20px] outline-0 text-[#6d6969] w-[500px]"
+          type="text"
+          placeholder="What is your name?(player-2)"
+        />
+      </form>
+      <button
+        id="playerTwoNameBtn"
+        class="bg-[#7041D3] py-[15px] px-[85px] rounded-[53px] font-pop font-bold text-8 text-white block m-auto cursor-pointer"
+      >
+        Start Game
+      </button>
+      <h2
+        id="playerTwoNameError"
+        class="bg-[#CC3030] py-[9px] px-[180px] m-auto inline-block mt-[55px] font-pop font-bold text-[28px] text-white rounded-5"
+        hidden
+      >
+        Name Is Missing
+      </h2>
+    </div>
+    <!-- Player Two Name Input End -->
+
+    <!-- Player Two Number Input Start -->
+    <div
+      class="max-w-[800px] bg-white pt-[200px] pb-[100px] m-auto text-center mt-[50px]"
+      id="playerTwoNumber"
+      hidden
+    >
+      <h1 id="playerTwoNumHeading" class="font-pop font-bold text-[28px]">
+        Player - 1
+      </h1>
+      <form>
+        <input
+          id="playerTwoNumInput"
+          class="border-[#D9D9D9] border-1 rounded-[80px] py-[20px] pl-[50px] my-[35px] font-pop font-bold text-[20px] outline-0 text-[#6d6969] w-[500px]"
+          type="number"
+          placeholder="Give a number"
+        />
+      </form>
+      <button
+        id="playerTwoNumBtn"
+        class="bg-[#7041D3] py-[15px] px-[85px] rounded-[53px] font-pop font-bold text-8 text-white block m-auto cursor-pointer"
+      >
+        Let’s Play
+      </button>
+      <h2
+        id="playerTwoNumError"
+        class="bg-[#CC3030] py-[9px] px-[180px] m-auto inline-block mt-[55px] font-pop font-bold text-[28px] text-white rounded-5"
+        hidden
+      >
+        Please give a number
+      </h2>
+    </div>
+    <!-- Player Two Number Input End -->
+
+    <!-- Player Two End -->
+
+    <!-- Result -->
+    <div
+      class="max-w-[800px] bg-white pt-[200px] pb-[100px] m-auto text-center mt-[50px]"
+      id="result"
+      hidden
+    >
+      <h2 id="resultText" class="font-pop font-bold text-[28px]">Win</h2>
+    </div>
+    <!-- Result -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
